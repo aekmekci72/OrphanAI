@@ -1,0 +1,136 @@
+/* Profile.css */
+.profile-page {
+    display: flex;
+    height: 100vh;
+    background: #e1e5d5;
+    color: #99a18b;
+  }
+  
+  .profile-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: #e1e5d5;
+    border-radius: 25px;
+    margin: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .profile-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3b6f6f;
+    margin-bottom: 20px;
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  .error-message,
+  .success-message {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    color: #d9534f;
+  }
+  
+  .success-message {
+    color: #5cb85c;
+  }
+  
+  .profile-view {
+    text-align: center;
+  }
+  
+  .profile-form {
+    width: 100%;
+    max-width: 500px;
+    max-height: 70vh; 
+    overflow-y: auto; 
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+  }
+  .profile-form::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .profile-form::-webkit-scrollbar-thumb {
+    background-color: #3b6f6f;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1.2rem;
+    color: #4f6f4f;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .edit-button,
+  .update-button,
+  .cancel-button {
+    background: #3b6f6f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .edit-button:hover,
+  .update-button:hover,
+  .cancel-button:hover {
+    background: #5e8a8a;
+  }
+  
+  .cancel-button {
+    background: #d9534f;
+  }
+  
+  .cancel-button:hover {
+    background: #c9302c;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

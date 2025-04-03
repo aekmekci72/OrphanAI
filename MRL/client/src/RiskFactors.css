@@ -1,0 +1,140 @@
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #e1e5d5;
+    color: #99a18b;
+  }
+  
+  /* Risk factor tracker page container */
+  .risk-factor-tracker-page {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Content styling */
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: #e1e5d5;
+    border-radius: 25px;
+    margin: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Form styling */
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  .form input[type="text"],
+  .form input[type="number"] {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #3b6f6f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #5e8a8a;
+  }
+  
+  /* Modal styling */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .close-modal {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #3b6f6f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .close-modal:hover {
+    background-color: #5e8a8a;
+  }
+  
+  /* Risk factor list styling */
+  .risk-factor-list {
+    margin-top: 20px;
+  }
+  
+  .risk-factor-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .risk-factor-list li {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .delete-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
